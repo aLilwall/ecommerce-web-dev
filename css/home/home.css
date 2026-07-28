@@ -61,6 +61,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_two {
@@ -68,6 +70,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_three {
@@ -75,6 +79,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_four {
@@ -82,6 +88,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_five {
@@ -89,6 +97,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_six {
@@ -96,6 +106,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_seven {
@@ -103,6 +115,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_eight {
@@ -110,6 +124,8 @@
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
+    display: grid;
+    justify-content: center;
 }
 
 .products .card_one .img {
@@ -222,4 +238,108 @@
 .products .card_eight .img:hover {
     cursor: pointer;
     background-image: url("../../img/products/perfume-8-selected.webp");
+}
+
+@media only screen and (max-width: 767px) {
+    .carrosel-group {
+        display: grid;
+        grid-template-columns: 0% 80% 0%;
+        justify-content: center;
+        width: 200%;
+    }
+
+    .carrossel-left .active {
+        display: none;
+    }
+
+    .carrossel-right .active {
+        display: none;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .products .card_one {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_two {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_three {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_four {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_five {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_six {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_seven {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_eight {
+        width: 140px;
+        height: 240px;
+    }
+
+    .products .card_one .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_two .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_three .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_four .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_five .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_six .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_seven .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .products .card_eight .img {
+        width: 110px;
+        height: 110px;
+    }
 }

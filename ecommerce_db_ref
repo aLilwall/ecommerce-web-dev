@@ -1,0 +1,7 @@
+Loja: Tabelas(Produtos, Cliente, Venda)
+
+Produtos: ID, Descrição, Preço, Qtde em estoque
+
+Cliente: ID, Nome, CNPJ, Endereço
+
+Venda: ID, ID Produto, ID Cliente, Data/Hora, Qtde, Valor total

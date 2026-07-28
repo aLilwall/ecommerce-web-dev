@@ -15,6 +15,7 @@ header .title {
     font-size: var(--h1-size);
     font-weight: bolder;
     text-transform: capitalize;
+    white-space: nowrap;
     font-family: var(--logo-font);
     color: var(--dark-color);
     justify-self: center;
@@ -47,6 +48,10 @@ header .gallery {
 
 header .gallery:hover {
     opacity: 0.75;
+}
+
+header .hamburguer {
+    display: none;
 }
 
 /* header {
@@ -112,3 +117,24 @@ header a.active {
     border-bottom: 1px solid var(--dark-color);
     padding-bottom: 1px;
 } */
+
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100vw;
+        height: 200px;
+        grid-template-columns: 0% 50% 50%;
+    }
+
+    header .gallery {
+        display: none;
+    }
+
+    header .cart {
+        display: none;
+    }
+
+    header .hamburguer {
+        display: block;
+        margin-left: 350px;
+    }
+}
