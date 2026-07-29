@@ -6,7 +6,7 @@ function initiateCarrosselMid() {
         images[i].classList.remove('active');
         i = (i + 1) % images.length;
         images[i].classList.add('active');
-    }, 3000)
+    }, 5000)
 }
 
 function initiateCarrosselLeft() {
@@ -17,7 +17,7 @@ function initiateCarrosselLeft() {
         images[i].classList.remove('active');
         i = (i + 1) % images.length;
         images[i].classList.add('active');
-    }, 3000)
+    }, 5000)
 }
 
 function initiateCarrosselRight() {
@@ -28,7 +28,7 @@ function initiateCarrosselRight() {
         images[i].classList.remove('active');
         i = (i + 1) % images.length;
         images[i].classList.add('active');
-    }, 3000)
+    }, 5000)
 }
 
 window.onload = () => {
