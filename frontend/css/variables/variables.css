@@ -1,9 +1,10 @@
 :root {
     /* COLOR VARIABLES */
     /* rgba(119, 221, 207, 0.6) */
-    --primary-color: #eee;
-    --secondary-color: hsl(172, 60%, 67%);
-    --secondary-opacity: color-mix(in hsl, hsl(172, 60%, 67%) 30%, hsla(172, 60%, 67%, 0) 70%);
+    --primary-color: hsl(0, 0%, 93%);
+    --primary-opacity: color-mix(in hsl, hsl(0, 0%, 93%), rgba(237, 237, 237, 0));
+    --secondary-color: hsl(173, 64%, 85%);
+    --secondary-opacity: color-mix(in hsl, hsl(173, 64%, 85%) 30%, hsla(173, 64%, 85%, 0) 70%);
     --light-color: #ddd;
     --dark-color: #414141;
     --body-font: "Gantari", sans-serif;

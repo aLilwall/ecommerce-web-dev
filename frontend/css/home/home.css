@@ -60,11 +60,15 @@
     background-color: var(--primary-color);
     padding: 22px;   
     border-radius: var(--standard-border-radius);
-    height: 300px;
+    height: 330px;
     justify-content: center;
 }
 
 .products .product_card #product_image {
+    width: 100px;
+}
+
+.products .product_card #product_image .product_image {
     width: 100%;
     grid-area: "img";
 }
@@ -75,7 +79,7 @@
     background-image: url("../../img/products/perfume-1-front.webp");
     background-size: cover;
     border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
+    transition: background-image .2s ease-in-out;
 }
 
 .products .product_card .product_image:hover {
@@ -87,6 +91,7 @@
     padding-left: 10px;
     color: var(--dark-color);
     width: 100px;
+    white-space: nowrap;
 }
 
 .products .product_card #price_sale {
