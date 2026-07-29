@@ -45,199 +45,81 @@
 .products {
     color: var(--dark-color);
     background-color: var(--light-color);
-    width: 100%;
+    width: 100vw;
     max-width: var(--standard-width);
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
     gap: var(--spacing-md);
+    padding: 100px 0;
 }
 
-.products .card_one {
+.products .product_card {
     background-color: var(--primary-color);
     padding: 22px;   
     border-radius: var(--standard-border-radius);
     height: 300px;
-    display: grid;
     justify-content: center;
 }
 
-.products .card_two {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
+.products .product_card #product_image {
+    width: 100%;
+    grid-area: "img";
 }
 
-.products .card_three {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_four {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_five {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_six {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_seven {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_eight {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 300px;
-    display: grid;
-    justify-content: center;
-}
-
-.products .card_one .img {
-    height: 200px;
+.products .product_card .product_image {
     width: 200px;
+    height: 200px;
     background-image: url("../../img/products/perfume-1-front.webp");
     background-size: cover;
     border-radius: var(--standard-border-radius);
     transition: background-image .2s ease-in-out; 
 }
 
-.products .card_one .img:hover {
+.products .product_card .product_image:hover {
     cursor: pointer;
     background-image: url("../../img/products/perfume-1-selected.webp");
 }
 
-.products .card_two .img{
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-2-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
+.products .product_card #title {
+    padding-left: 10px;
+    color: var(--dark-color);
+    width: 100px;
 }
 
-.products .card_two .img:hover {
+.products .product_card #price_sale {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products .product_card #price {
+    width: 160px;
+    height: 40px;
+    align-content: center;
+    background-color: var(--secondary-opacity);
+    border-radius: var(--standard-border-radius) 0% 0% var(--standard-border-radius);
+    padding-left: 10px;
+}
+
+.products .product_card #button {
+    background-color: var(--secondary-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 0% var(--standard-border-radius) var(--standard-border-radius) 0%;
+}
+
+.products .product_card img {
+    width: 20px;
+    height: 20px;
+}
+
+.products .product_card #button:hover {
     cursor: pointer;
-    background-image: url("../../img/products/perfume-2-selected.webp");
-}
-
-.products .card_three .img {
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-3-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_three .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-3-selected.webp");
-}
-
-.products .card_four .img{
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-4-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_four .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-4-selected.webp");
-}
-
-.products .card_five .img {
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-5-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_five .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-5-selected.webp");
-}
-
-.products .card_six .img{
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-6-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_six .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-6-selected.webp");
-}
-
-.products .card_seven .img {
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-7-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_seven .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-7-selected.webp");
-}
-
-.products .card_eight .img{
-    height: 200px;
-    width: 200px;
-    background-image: url("../../img/products/perfume-8-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out; 
-}
-
-.products .card_eight .img:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-8-selected.webp");
 }
 
 @media only screen and (max-width: 767px) {
@@ -263,7 +145,7 @@
         width: 400px;
     }
 
-    .products .card_one {
+    .products .product_card {
         width: 140px;
         height: 240px;
     }
@@ -303,7 +185,7 @@
         height: 240px;
     }
 
-    .products .card_one .img {
+    .products .product_card .img {
         width: 110px;
         height: 110px;
     }
