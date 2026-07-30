@@ -3,8 +3,8 @@
     /* rgba(119, 221, 207, 0.6) */
     --primary-color: hsl(0, 0%, 93%);
     --primary-opacity: color-mix(in hsl, hsl(0, 0%, 93%), rgba(237, 237, 237, 0));
-    --secondary-color: hsl(173, 64%, 85%);
-    --secondary-opacity: color-mix(in hsl, hsl(173, 64%, 85%) 30%, hsla(173, 64%, 85%, 0) 70%);
+    --secondary-color: hsla(0, 61%, 81%, 0.5);
+    --secondary-opacity: color-mix(in hsl, hsl(0, 61%, 81%) 20%, hsla(0, 61%, 81%, 0) 80%);
     --light-color: #ddd;
     --dark-color: #414141;
     --body-font: "Gantari", sans-serif;
@@ -32,5 +32,5 @@
     --spacing-xl: 64px;
     /* WIDTH LIMITS */
     --standard-width: 1144px;
-    --standard-border-radius: 8px;
+    --standard-border-radius: 12px;
 }

@@ -42,191 +42,67 @@
     display: block;
 }
 
-.products {
+.tabProduct {
+    width: auto;
+    margin-bottom: 120px;
+}
+
+#listProduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#listProduct .item {
+    width: 200px;
+    height: auto;
+    background-color: var(--primary-color);
     color: var(--dark-color);
-    background-color: var(--light-color);
-    width: 100vw;
-    max-width: var(--standard-width);
-    height: 100%;
+    border-radius: var(--standard-border-radius);
+    text-align: center;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-md);
-    padding: 100px 0;
 }
 
-.products .product_card {
-    background-color: var(--primary-color);
-    padding: 22px;   
-    border-radius: var(--standard-border-radius);
-    height: 330px;
-    justify-content: center;
-}
-
-.products .product_card #product_image {
-    width: 100px;
-}
-
-.products .product_card #product_image .product_image {
+#listProduct .item img {
     width: 100%;
-    grid-area: "img";
 }
 
-.products .product_card .product_image {
+#listProduct .item .name {
     width: 200px;
-    height: 200px;
-    background-image: url("../../img/products/perfume-1-front.webp");
-    background-size: cover;
-    border-radius: var(--standard-border-radius);
-    transition: background-image .2s ease-in-out;
-}
-
-.products .product_card .product_image:hover {
-    cursor: pointer;
-    background-image: url("../../img/products/perfume-1-selected.webp");
-}
-
-.products .product_card #title {
-    padding-left: 10px;
+    background-color: var(--light-color);
     color: var(--dark-color);
-    width: 100px;
-    white-space: nowrap;
+    font-size: large;
+    border-radius: var(--standard-border-radius) var(--standard-border-radius) 0 0;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.products .product_card #price_sale {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.products .product_card #price {
-    width: 160px;
-    height: 40px;
-    align-content: center;
+#listProduct .item .price {
+    width: 52px;
     background-color: var(--secondary-opacity);
-    border-radius: var(--standard-border-radius) 0% 0% var(--standard-border-radius);
-    padding-left: 10px;
+    padding: 18.5px 10px;
+    padding-right: 90px;
+    border-radius: 0 0 0 var(--standard-border-radius);
 }
 
-.products .product_card #button {
+#listProduct .item button {
+    all: unset;
     background-color: var(--secondary-color);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 0% var(--standard-border-radius) var(--standard-border-radius) 0%;
+    padding: 4px 0; 
+    width: 48px;
+    height: 48px;
+    border-radius: 0 0 var(--standard-border-radius) 0;
 }
 
-.products .product_card img {
-    width: 20px;
-    height: 20px;
-}
-
-.products .product_card #button:hover {
+#listProduct .item button:hover {
     cursor: pointer;
+    opacity: .5;
 }
 
-@media only screen and (max-width: 767px) {
-    .carrosel-group {
-        display: grid;
-        grid-template-columns: 0% 80% 0%;
-        justify-content: center;
-        width: 200%;
-    }
-
-    .carrossel-left .active {
-        display: none;
-    }
-
-    .carrossel-right .active {
-        display: none;
-    }
-
-    .products {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        width: 400px;
-    }
-
-    .products .product_card {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_two {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_three {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_four {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_five {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_six {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_seven {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .card_eight {
-        width: 140px;
-        height: 240px;
-    }
-
-    .products .product_card .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_two .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_three .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_four .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_five .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_six .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_seven .img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .products .card_eight .img {
-        width: 110px;
-        height: 110px;
-    }
+#listProduct .item button img {
+    width: 26px;
 }

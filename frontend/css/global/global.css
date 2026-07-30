@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
 	font-family: var(--body-font);
 	color: var(--text-dark);
+	position: relative;
 }
 /*body tem margin por padrão*/
 /* body{
@@ -64,4 +65,83 @@ h1{
 
 h2{
 	margin: 0px;
+}
+
+#tabCart {
+	display: none;
+    width: 450px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	z-index: 2;
+	box-shadow: 10px black;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.title button {
+    all: unset;
+    width: var(--spacing-xl);
+    height: var(--spacing-xl);
+}
+
+.title button img {
+    width: 100%;
+}
+
+#tabCart #closeCart {
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+#listCart {
+    padding: var(--spacing-sm);
+}
+
+#listCart .name {
+    color: var(--dark-color);
+}
+
+#listCart .item {
+    display: grid;
+    grid-template-columns: 50px 195px 70px 30px;
+    grid-template-rows: 50px;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+    align-items: center;
+    background-color: var(--light-color);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--standard-border-radius);
+}
+
+#listCart .item span {
+    color: var(--dark-color);
+}
+
+#listCart .item .price {
+    color: var(--dark-color);
+}
+
+#listCart .item img {
+    width: 100%;
+    border-radius: var(--standard-border-radius);
+}
+
+#listCart .item .quantity {
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listCart .item .quantity button {
+	width: 20px;
+	height: 20px;
 }

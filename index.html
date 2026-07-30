@@ -29,6 +29,24 @@
             <span></span>
         </div>
     </header>
+    <div id="tabCart">
+        <div class="title">
+            <h2>Cart</h2>
+            <button id="closeCart">X</button>
+        </div>
+        <div id="listCart">
+            <div class="item">
+                <img src="frontend/img/products/perfume-1-front.webp" alt="">
+                <div class="name">Parfumeur Jove</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <div class="price">60.00$</div>
+            </div>
+        </div>
+    </div>
     <div class="carrosel-group">
         <div class="carrossel-left">
             <img src="frontend/img/carrousel/banner_01.webp" alt="você&eu" class="active">
@@ -49,20 +67,23 @@
             <img src="frontend/img/carrousel/banner_04.webp" alt="natureza" class="">
         </div>
     </div>
-    <div class="products">
-        <div class="product_card">
-            <a href="frontend/pages/products/first_page.html" id="product_image">
-                <div class="product_image"></div>
-            </a>
-            <h3 id="title">Parfumeur Jove - 100ml</h3>
-            <div id="price_sale">
-                <span id="price">$60.00</span>
-                <button id="button">
+    <div class="tabProduct">
+        <div class="title">
+            <h1>Catalogue de parfums</h1>
+        </div>
+        <div id="listProduct">
+            <div class="item">
+                <a href="frontend/pages/products/first_page.html">
+                    <img src="frontend/img/products/perfume-1-front.webp" alt="" onmouseover="this.src='frontend/img/products/perfume-1-selected.webp'" onmouseout="this.src='frontend/img/products/perfume-1-front.webp'">
+                </a>
+                <div class="name">Parfum Jove</div>
+                <div class="price">30.00$</div>
+                <button>
                     <img src="frontend/img/icons/shopping-bag.png" alt="">
                 </button>
             </div>
         </div>
-    </div>   
+    </div>  
     <div class="message">
         <h3>
             Designing, making, and selling goods of timeless design and uncompromising
