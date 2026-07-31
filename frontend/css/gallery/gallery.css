@@ -12,7 +12,11 @@
     "f d d"
     "f d d"
     "f e e"
-    "f e e";
+    "f e e"
+    "g g h"
+    "g g h"
+    "g g h"
+    "g g h";
     width: 400px;
     justify-content: center;
     align-items: center;
@@ -64,24 +68,26 @@
 
 .album #img07 {
     grid-area: g;
-    height: 300px;
+    height: 620px;
     width: fit-content;
+}
+
+.album #img07 img {
+    width: 900px;
+    left: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 
 .album #img08 {
     grid-area: h;
-    height: 300px;
+    height: 620px;
     width: fit-content;
 }
 
 .album #img09 {
+    display: none;
     grid-area: i;
-    height: 600px;
-    width: fit-content;
-}
-
-.album #img10 {
-    grid-area: j;
     height: 300px;
     width: fit-content;
 }

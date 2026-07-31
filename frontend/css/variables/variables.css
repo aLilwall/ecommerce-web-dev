@@ -3,8 +3,8 @@
     /* rgba(119, 221, 207, 0.6) */
     --primary-color: hsl(0, 0%, 93%);
     --primary-opacity: color-mix(in hsl, hsl(0, 0%, 93%), rgba(237, 237, 237, 0));
-    --secondary-color: hsla(0, 61%, 81%, 0.5);
-    --secondary-opacity: color-mix(in hsl, hsl(0, 61%, 81%) 20%, hsla(0, 61%, 81%, 0) 80%);
+    --secondary-color: hsla(42, 31%, 89%, 0.795);
+    --secondary-opacity: color-mix(in hsl, hsl(42, 31%, 89%) 10%, hsla(42, 31%, 89%, 0) 90%);
     --light-color: #ddd;
     --dark-color: #414141;
     --body-font: "Gantari", sans-serif;

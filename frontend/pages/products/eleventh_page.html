@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/products/product_page.css">
+    <title>Eighth one</title>
+</head>
+<body>
+    <header>
+        <a href="../../pages/gallery/gallery.html" class="gallery">gallery</a>
+        <a id="title" href="../../../index.html" class="title">Le Parfumeur</a>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <a href="../../pages/cart/cart.html" class="login">
+            <img src="../../img/icons/user.png" alt="">
+        </a>
+        <a href="../../pages/cart/cart.html" class="cart">
+            <img src="../../img/icons/shopping-bag.png" alt="">
+        </a>
+        <div class="hamburguer">x
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div id="tabCart">
+        <div class="title">
+            <h2>Cart</h2>
+            <button id="closeCart">X</button>
+        </div>
+        <div id="listCart">
+            <div class="item">
+                <img src="../../img/products/perfume-1-front.webp" alt="">
+                <div class="name">Parfumeur Jove</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <div class="price">60.00$</div>
+            </div>
+        </div>
+    </div>
+    <div class="product_info">
+        <div class="product_card">
+            <div class="product_view">
+                <img id="viewport" src="../../img/products/perfume-11-front.webp" alt="">
+            </div>
+            <div class="product_photos">
+                <img src="../../img/products/perfume-11-front.webp" alt="" onmouseenter="photo1()">
+                <img src="../../img/products/perfume-11-selected.webp" alt="" onmouseenter="photo2()">
+                <img src="../../img/products/perfume-11-view.webp" alt="" onmouseenter="photo3()">
+                <img src="../../img/products/Noir-collection.webp" alt="" onmouseenter="photo4()">
+            </div>
+        </div>
+        <div class="product_price">
+            <h2>Product Name</h2>
+            <h4>Product Price</h4>
+            <span>Lore ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+    </div>
+    <script>
+        function photo1() {
+            document.getElementById('viewport').src = "../../img/products/perfume-11-front.webp"
+        }
+
+        function photo2() {
+            document.getElementById('viewport').src = "../../img/products/perfume-11-selected.webp"
+        }
+
+        function photo3() {
+            document.getElementById('viewport').src = "../../img/products/perfume-11-view.webp"
+        }
+
+        function photo4() {
+            document.getElementById('viewport').src = "../../img/products/Noir-collection.webp"
+        }
+    </script>
+    <div class="message">
+        <h3>
+            Designing, making, and selling goods of timeless design and uncompromising
+            integrity—made thoughtfully, honestly, and with pride—to be enjoyed with similar intention.
+        </h3>
+    </div>
+    <footer>
+        <div class="contact">
+            <h3>Contacts</h3>
+            <p>giorno_giovanna@leParfumeur.com</p>
+            <p>(19) 94002-8922</p>
+        </div>
+        <div class="links">
+            <h3>Social Media</h3>
+            <div class="logos">
+                <a href="https://www.instagram.com/peq.muro/">
+                    <img src="../../img/icons/instagram.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/@aLilwall">
+                    <img src="../../img/icons/youtube.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -15,7 +15,11 @@ let products = [
     {id: 5, name: 'Product Name', price: 30, image: imgPath+'/perfume-5-front.webp', selected: imgPath+'/perfume-5-selected.webp', page: pagePath+'/fifth_page.html'},
     {id: 6, name: 'Product Name', price: 20, image: imgPath+'/perfume-6-front.webp', selected: imgPath+'/perfume-6-selected.webp', page: pagePath+'/sixth_page.html'},
     {id: 7, name: 'Product Name', price: 40, image: imgPath+'/perfume-7-front.webp', selected: imgPath+'/perfume-7-selected.webp', page: pagePath+'/seventh_page.html'},
-    {id: 8, name: 'Product Name', price: 50, image: imgPath+'/perfume-8-front.webp', selected: imgPath+'/perfume-8-selected.webp', page: pagePath+'/eighth_page.html'}
+    {id: 8, name: 'Product Name', price: 50, image: imgPath+'/perfume-8-front.webp', selected: imgPath+'/perfume-8-selected.webp', page: pagePath+'/eighth_page.html'},
+    {id: 9, name: 'Product Name', price: 40, image: imgPath+'/perfume-9-front.webp', selected: imgPath+'/perfume-9-selected.webp', page: pagePath+'/ninth_page.html'},
+    {id: 10, name: 'Product Name', price: 60, image: imgPath+'/perfume-10-front.webp', selected: imgPath+'/perfume-10-selected.webp', page: pagePath+'/tenth_page.html'},
+    {id: 11, name: 'Product Name', price: 60, image: imgPath+'/perfume-11-front.webp', selected: imgPath+'/perfume-11-selected.webp', page: pagePath+'/eleventh_page.html'},
+    {id: 12, name: 'Product Name', price: 60, image: imgPath+'/perfume-12-front.webp', selected: imgPath+'/perfume-12-selected.webp', page: pagePath+'/twelfth_page.html'},
 ]
 
 let carts = [
