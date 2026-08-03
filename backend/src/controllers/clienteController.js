@@ -1,5 +1,5 @@
 const clienteModel = require("../models/clienteModel");
-const clienteView = require("../models/clienteView");
+const clienteView = require("../views/clienteView");
 
 async function cadastrar(req, res) {
     try {
