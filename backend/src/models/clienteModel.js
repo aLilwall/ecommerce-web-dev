@@ -2,8 +2,8 @@ const conexaoMysql = require("../configs/mysql");
 
 async function cadastrarCliente(dadosCliente) {
     const nome = dadosCliente.nome;
-    const nome = dadosCliente.cnpj;
-    const nome = dadosCliente.endereco;
+    const cnpj = dadosCliente.cnpj;
+    const endereco = dadosCliente.endereco;
 
     const sql = `
         INSERT INTO usuario (nome, cnpj, endereco) VALUES (?, ?, ?)
