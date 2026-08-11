@@ -20,6 +20,21 @@ async function cadastrarCliente(dadosCliente) {
     };
 }
 
-async function excluirCliente() {
-    
+async function excluirCliente(id) {
+    const sql = `
+        DELETE FROM cliente
+        WHERE id = ?
+    `;
+
+    const valores = [id];
+    const resultado = await conexaoMysql.query(sql, valores);
+    return resultado[0];
 }
+
+module.exports = {
+    listar: listar,
+    buscarPorId: buscarPorId,
+    cadastrar: cadastrar,
+    atualizar: atualizar,
+    excluir: excluir
+};
