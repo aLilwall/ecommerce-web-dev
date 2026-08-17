@@ -1,0 +1,22 @@
+@import "../global/header.css";
+@import "../global/global.css";
+@import "../global/footer.css";
+@import "../variables/variables.css";
+
+form {
+    background-color: var(--primary-color);
+    padding: 100px 10px;
+    display: grid;
+    height: 200px;
+    width: 300px;
+    margin: 100px;
+    border-radius: 5px;
+}
+
+form input {
+    height: 20px;
+}
+
+form button {
+    margin-top: 20px;
+}
