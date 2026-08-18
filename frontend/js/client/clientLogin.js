@@ -7,7 +7,7 @@ formCadastrarUsuario.addEventListener("submit", async function (evento) {
 
     const id = document.getElementById("idCliente").value;
     const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("senha").value;
     
     if(id !== "") {
         url = `/usuario/${id}`;
@@ -28,7 +28,7 @@ formCadastrarUsuario.addEventListener("submit", async function (evento) {
         limparFormularioUsuario();
         botaoListarUsuarios();
     } catch(erro) {
-        resultado.textContent = "Erro ao salvar cliente";
+        resultado.textContent = "Something went wrong ";
         console.log(erro.message);
     }
 })

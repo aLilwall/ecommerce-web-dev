@@ -2,8 +2,8 @@ const conexaoMysql = require("../configs/mysql");
 
 async function list() {
   const sql = `
-    SELECT [need to add]
-    FROM client
+    SELECT nome
+    FROM cliente
     ORDER BY id ASC
   `;
 
@@ -13,8 +13,8 @@ async function list() {
 
 async function searchPerId(id) {
   const sql = `
-    SELECT id, nome, email, contato, cargo
-    FROM usuario
+    SELECT nome, cnpj, endereco
+    FROM cliente
     WHERE id = ?
   `;
 
@@ -35,7 +35,7 @@ async function register(clientData) {
     const endereco = clientData.endereco;
 
     const sql = `
-        INSERT INTO client (nome, cnpj, endereco) VALUES (?, ?, ?)
+        INSERT INTO cliente (nome, cnpj, endereco) VALUES (?, ?, ?)
     `;
 
     const values = [nome, cnpj, endereco];
@@ -51,24 +51,23 @@ async function register(clientData) {
 
 async function update(id, clientData) {
   const nome = clientData.nome;
-  const email = clientData.email;
-  const contato = clientData.contato;
-  const cargo = clientData.cargo;
+  const cnpj = clientData.cnpj;
+  const endereco = clientData.endereco;
 
   const sql = `
-    UPDATE client
-    SET nome = ?, email = ?, contato = ?, cargo = ?
+    UPDATE cliente
+    SET nome = ?, cnpj = ?, endereco = ?
     WHERE id = ?
   `;
 
-  const values = [nome, email, contato, cargo, id];
+  const values = [nome, cnpj, endereco, id];
   const result = await conexaoMysql.query(sql, values);
   return result[0];
 }
 
 async function deleteClient(id) {
     const sql = `
-        DELETE FROM client
+        DELETE FROM cliente
         WHERE id = ?
     `;
 
