@@ -10,25 +10,25 @@ formCadastrarUsuario.addEventListener("submit", async function (evento) {
     const email = document.getElementById("senha").value;
     
     if(id !== "") {
-        url = `/usuario/${id}`;
-        metodo = "PUT";
+        url = `/client/${id}`;
+        method = "PUT";
     }
 
     try {
-        const resposta = await fetch(url, {
-            method: metodo,
+        const answer = await fetch(url, {
+            method: method,
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(dadosUsuario)
+            body: JSON.stringify(clientData)
         });
 
-        const dadosResposta = await resposta.json();
-        resultado.textContent = JSON.stringify(dadosResposta, null, 2);
+        const answerData = await answer.json();
+        resultado.textContent = JSON.stringify(answerData, null, 2);
         limparFormularioUsuario();
         botaoListarUsuarios();
-    } catch(erro) {
+    } catch(error) {
         resultado.textContent = "Something went wrong ";
-        console.log(erro.message);
+        console.log(error.message);
     }
 })
