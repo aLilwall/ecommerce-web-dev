@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 require("dotenv").config();
 
-const clienteRoutes = require("./routes/clienteRoutes");
+const clientRoutes = require("./routes/clientRoutes");
 const conexaoMysql = require("./configs/mysql");
 
 const app = express();
@@ -14,10 +14,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "../../frontend")));
 
 app.get("/", function (req, res) {
-    res.send("API ReservLab funcionando")
+    res.send("API funcionando")
 });
 
-app.use("/clientes", clientesRoutes);
+app.use("/clientes", clientRoutes);
 
 app.get("/teste-mysql", async function (req, res) {
     try {
